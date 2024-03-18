@@ -1,19 +1,23 @@
 import 'package:flutter/material.dart';
 
+import 'screens/desktop_screen.dart';
+import 'screens/mobile_screen.dart';
+import 'screens/tablet_screen.dart';
+import 'widgets/responsive_layout.dart';
+
 void main() {
-  runApp(const MainApp());
+  runApp(MainApp());
 }
 
 class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: ResponsiveLayout(
+        mobileLayout: MobileScreen(),
+        tabletLayout: TabletScreen(),
+        desktopLayout: DesktopScreen(),
       ),
     );
   }
