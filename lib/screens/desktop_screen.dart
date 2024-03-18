@@ -5,7 +5,8 @@ class DesktopScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Desktop Layout'),
+        centerTitle: false,
+        title: Text('Flutter TextColor Selector'),
       ),
       body: Row(
         children: [
