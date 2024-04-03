@@ -50,7 +50,7 @@ class _DesktopScreenState extends State<DesktopScreen> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: false,
-        title: Text('Flutter TextColor Selector'),
+        title: Text('TextColor Selector'),
       ),
       body: Row(
         children: [
@@ -78,7 +78,10 @@ class _DesktopScreenState extends State<DesktopScreen> {
                 child: Container(
                   color: background,
                   child: Center(
-                    child: Text('Upside'),
+                    child: Text(
+                      'White Text',
+                      style: TextStyle(fontSize: 24),
+                    ),
                   ),
                 ),
               ),
@@ -88,8 +91,8 @@ class _DesktopScreenState extends State<DesktopScreen> {
                   color: background,
                   child: Center(
                     child: Text(
-                      'Downside',
-                      style: TextStyle(color: Colors.black),
+                      'Black Text',
+                      style: TextStyle(fontSize: 24, color: Colors.black),
                     ),
                   ),
                 ),
