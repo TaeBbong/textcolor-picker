@@ -18,7 +18,7 @@ class MainApp extends StatelessWidget {
       theme: initThemeData(brightness: Brightness.light),
       darkTheme: initThemeData(brightness: Brightness.dark),
       home: ResponsiveLayout(
-        mobileLayout: MobileScreen(),
+        mobileLayout: TabletScreen(),
         tabletLayout: TabletScreen(),
         desktopLayout: DesktopScreen(),
       ),
